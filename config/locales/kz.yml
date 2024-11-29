@@ -1,0 +1,31 @@
+kz:
+  devise:
+    failure:
+      invited: "Сізде әлі қабылданбаған шақыру бар, аккаунтты құруды аяқтау үшін оны қабылдаңыз."
+    invitations:
+      send_instructions: 'Шақыру хаты %{email} мекенжайына жіберілді.'
+      invitation_token_invalid: 'Шақырудың жарамсыз токені берілді!'
+      updated: 'Құпия сөз сәтті орнатылды. Сіз жүйеге кірдіңіз.'
+      updated_not_active: "Сіздің құпия сөзіңіз сәтті орнатылды."
+      no_invitations_remaining: "Шақырулар қалмады"
+      invitation_removed: 'Сіздің шақыруыңыз жойылды.'
+      new:
+        header: "Шақыру жіберу"
+        submit_button: "Шақыру жіберу"
+      edit:
+        header: "Құпия сөзіңізді орнатыңыз"
+        submit_button: "Менің құпия сөзімді орнату"
+    mailer:
+      invitation_instructions:
+        subject: 'Шақыру нұсқаулары'
+        hello: 'Сәлеметсіз бе, %{email}'
+        someone_invited_you: 'Сізді %{url} сайтына шақырды, төмендегі сілтеме арқылы шақыруды қабылдай аласыз.'
+        accept: 'Шақыруды қабылдау'
+        accept_until: "Бұл шақыру %{due_date} дейін жарамды."
+        ignore: "Егер сіз шақыруды қабылдағыңыз келмесе, осы хатты елемеңіз.<br />Жоғарыдағы сілтемеге өтіп, құпия сөзіңізді орнатпайынша сіздің аккаунтыңыз жасалмайды."
+  time:
+    formats:
+      devise:
+        mailer:
+          invitation_instructions:
+            accept_until_format: "%d %B %Y, %H:%M"
